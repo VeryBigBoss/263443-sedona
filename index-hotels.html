@@ -11,16 +11,30 @@
         <ul>
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
+            <li><a href="#"><img src="img/logo.png" width="140px" alt=""></a></li>
             <li><a href="#">Карта штата</a></li>
             <li><a href="#">Гостиницы</a></li>
         </ul>
     </nav>
-    <div class="logo">
-        <a href="#"><img src="img/logo.png" width="140px" alt=""></a>
-    </div>
 </header>
 <main>
-    <form class="content-filter">
+    <form class="content-filter" action="" method="get">
+        <span>Инфраструктура</span>
+        <ul class="infrastructure">
+            <li><label><input type="checkbox" id="swimming-pool" name="swimming-pool">Бассейн</label></li>
+            <li><label><input type="checkbox" id="parking" name="parking">Парковка</label></li>
+            <li><label><input type="checkbox" id="wi-fi" name="wi-fi">Wi-fi</label></li>
+        </ul>
+        <span>Тип жилья</span>
+        <ul class="type-house">
+            <li><label><input type="checkbox" id="hotel" name="hotel">Гостиница</label></li>
+            <li><label><input type="checkbox" id="motel" name="motel">Мотель</label></li>
+            <li><label><input type="checkbox" id="apartments" name="apartments">Апартаменты</label></li>
+        </ul>
+        <div class="coast">
+            <span>Стоимость в сутки</span>
+        </div>
+        <button class="button-show" type="submit">Показать</button>
 
     </form>
     <div class="content">
