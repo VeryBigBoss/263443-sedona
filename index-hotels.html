@@ -6,6 +6,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+<div class="container">
 <header class="main-header">
     <nav class="main-nav">
         <ul>
@@ -18,29 +19,37 @@
     </nav>
 </header>
 <main>
-    <form class="content-filter" action="" method="get">
-        <span>Инфраструктура</span>
+    <form class="content-filter left-right-padding-container clearfix" action="" method="get">
+      <div class="column-in-filter">
+      <span class="title-in-filter">Инфраструктура</span>
         <ul class="infrastructure">
             <li><label><input type="checkbox" id="swimming-pool" name="swimming-pool">Бассейн</label></li>
             <li><label><input type="checkbox" id="parking" name="parking">Парковка</label></li>
             <li><label><input type="checkbox" id="wi-fi" name="wi-fi">Wi-fi</label></li>
         </ul>
-        <span>Тип жилья</span>
+      </div>
+      <div class="column-in-filter">
+        <span class="title-in-filter">Тип жилья</span>
         <ul class="type-house">
             <li><label><input type="checkbox" id="hotel" name="hotel">Гостиница</label></li>
             <li><label><input type="checkbox" id="motel" name="motel">Мотель</label></li>
             <li><label><input type="checkbox" id="apartments" name="apartments">Апартаменты</label></li>
         </ul>
+      </div>
+      <div class="column-in-filter">
         <div class="coast">
-            <span>Стоимость в сутки</span>
+            <span class="title-in-filter">Стоимость в сутки</span>
         </div>
         <button class="button-show" type="submit">Показать</button>
-
+      </div>
     </form>
-    <div class="content">
+    <div class="content left-right-padding-container clearfix">
+      <div class="conten-left">
         <div class="result-count">
-            <h3>Найдено:3</h3>
+            <span class="title">Найдено: 3</span>
         </div>
+      </div>
+      <div class="content-right">
         <div class="sorting">
             <span>Сортировка</span>
             <a href="#">по цене</a>
@@ -51,76 +60,85 @@
             <img src="http://placehold.it/20x20">
             <img src="http://placehold.it/20x20">
         </div>
+      </div>
     </div>
-    <section class="content-hotel">
+    <section class="content-hotel left-right-padding-container">
         <div class="hotel-image">
             <img src="img/amara.png" width="135px" alt="Гостиница Amara resort & spa">
         </div>
         <div class="hotel-description">
-            <div class="description-header">
-                <h3>Amara resort & spa</h3>
-                <img class="stars" src="img/stars.png" alt="4 звезды">
+            <div class="description-header clearfix">
+              <div class="title">
+                  <span>Amara resort & spa</span>
+              </div>
+                <div class="stars">
+                  <img src="img/stars.png" alt="4 звезды">
+                </div>
             </div>
             <div class="description-middle">
                 <span class="type">Гостиница</span>
                 <span class="price">от 4000 р.</span>
             </div>
-            <div class="description-bottom">
+            <div class="description-bottom clearfix">
                 <a class="btn about" href="#">Подробнее</a>
                 <a class="btn reserve" href="#">Забронировать</a>
-            </div>
-            <div class="raiting">
-                <span>Рейтинг:8,5</span>
+                <span class="raiting">Рейтинг:8,5</span>
             </div>
         </div>
     </section>
-    <section class="content-hotel">
+    <section class="content-hotel left-right-padding-container">
         <div class="hotel-image">
             <img src="img/desert.png" alt="Мотель DESERT...">
         </div>
         <div class="hotel-description">
-            <div class="description-header">
-                <h3>Desert quail inn</h3>
+            <div class="description-header clearfix">
+              <div class="title">
+                <span>Desert quail inn</span>
+              </div>
+              <div class="stars">
                 <img class="stars" src="img/stars.png" alt="3 звезды">
+              </div>
             </div>
             <div class="description-middle">
                 <span class="type">Мотель</span>
                 <span class="price">от 3000 р.</span>
             </div>
-            <div class="description-bottom">
+            <div class="description-bottom clearfix">
                 <a class="btn about" href="#">Подробнее</a>
                 <a class="btn reserve" href="#">Забронировать</a>
-            </div>
-            <div class="raiting">
-                <span>Рейтинг:8,9</span>
+                <span class="raiting">Рейтинг:8,9</span>
             </div>
         </div>
     </section>
-    <section class="content-hotel">
+    <section class="content-hotel left-right-padding-container">
         <div class="hotel-image">
             <img src="img/villas.png" alt="Апартаменты VILLAS">
         </div>
         <div class="hotel-description">
-            <div class="description-header">
-                <h3>Villas at poco diablo</h3>
-                <img class="stars" src="img/stars.png" alt="2 звезды">
+            <div class="description-header clearfix">
+              <div class="title">
+                <span>Villas at poco diablo</span>
+              </div>
+              <div class="stars">
+                <img src="img/stars.png" alt="2 звезды">
+              </div>
             </div>
             <div class="description-middle">
                 <span class="type">Апартаменты</span>
                 <span class="price">от 2000 р.</span>
             </div>
-            <div class="description-bottom">
+            <div class="description-bottom clearfix">
                 <a class="btn about" href="#">Подробнее</a>
                 <a class="btn reserve" href="#">Забронировать</a>
-            </div>
-            <div class="raiting">
+              <div class="raiting">
                 <span>Рейтинг:8,9</span>
+              </div>
             </div>
         </div>
     </section>
 </main>
-<footer class="main-footer">
-    <section class="hashteg">
+<footer class="main-footer -left-right-padding-container">
+    <section class="footer-hashteg">
         <span><a href="#">#visitsedona</a></span>
     </section>
     <section class="footer-social">
@@ -130,8 +148,9 @@
     </section>
     <section class="footer-copyright">
         <p>website by</p>
-        <a href="https://htmlacademy.ru"><img src="img/academy-logo.png" width="195px" alt="HtmlAcademy"></a>
+        <a href="https://htmlacademy.ru"><img src="img/academy-logo.png" width="100px" alt="HtmlAcademy"></a>
     </section>
 </footer>
+</div>
 </body>
 </html>

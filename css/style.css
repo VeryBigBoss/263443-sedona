@@ -1,24 +1,445 @@
 body {
-    font-family: "PT Sans";
-    min-height: 21px;
-    font-weight: normal;
-    font-size: 14px;
-    color: #000000
+  font-family: "PT Sans", "Arial", sans-serif;
+  min-height: 21px;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  color: #000000;
+  text-transform: uppercase;
+  /*background: url("");*/
+}
+
+.container,
+main {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-header {
+  min-height: 70px;
+  width: 1200px;
 }
 
 .main-nav {
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 26px;
+  -padding: 0 72px;
+}
+
+.main-nav ul {
+  margin: 0 72px;
+  padding: 0;
+
+  list-style: none;
+  -font-size: 0;
+}
+
+.main-nav li {
+  display: inline-block;
+  -margin-left: auto;
+  margin-right: 89px;
+  font-size: 14px;
+  line-height: 26px;
+  vertical-align: middle;
+  -padding-top: 15px;
+  text-align: center;
+  outline: 1px solid black;
+}
+
+.main-nav li:first-child {
+  text-align: left;
+}
+
+.main-nav li:last-child {
+  text-align: right;
+}
+
+.main-nav li:nth-child(3n) {
+  padding-top: 0;
+}
+
+.main-nav li:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.main-nav li {
+  text-align: center;
+}
+
+.main-nav a {
+  display: block;
+  vertical-align: middle;
+  width: 137px;
+  height: 41px;
+  padding-top: 15px;
+  padding-left: 0;
+
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-nav a:nth-child(3n) {
+  padding-top: -15px;
+}
+
+.main-image {
+  height: 432px;
+  -width: 1200px;
+  margin-top: -14px;
+  padding-top: 76px;
+  padding-left: 371px;
+  margin-bottom: 0;
+  outline: 1px dotted black;
+  background: /*#4076a1*/ url("../img/main-image-background2.jpg") no-repeat;
+}
+
+.main-image img {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tagline {
-    font-weight: bold;
-    line-height: 26px;
-    text-transform: uppercase;
+  height: 154px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  outline: 1px dashed black;
 }
 
-.features-item span {
-    font-weight: bold;
-    text-transform: uppercase;
+.tagline p {
+  padding: 0;
+  margin: 0;
 }
+
+.tagline p:first-child {
+  font-weight: bold;
+  font-size: 21px;
+  text-align: center;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-top: 62px;
+  margin-bottom: 33px;
+}
+
+.tagline p:last-child {
+  line-height: 26px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.content-text{
+  outline: 1px solid green;
+}
+
+.title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  text-align: center;
+  outline: 1px solid black;
+  text-transform: uppercase;
+}
+
+.number,
+.about {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  outline: 1px solid brown;
+}
+
+.content-item {
+  -float: left;
+  height: 256px;
+  outline: 1px dashed yellow;
+}
+
+.content-image {
+  float: left;
+  height: 256px;
+  width: 800px;
+}
+
+.content-text{
+  -box-sizing: border-box;
+  padding-top: 54px;
+}
+
+.content-text p {
+  padding: 0;
+  margin: 0;
+}
+
+.blue p:first-child {
+  margin-bottom: 24px;
+}
+
+.blue p:nth-child(2) {
+  margin-bottom: 26px;
+}
+
+.content-text {
+  float: left;
+  height: 200px;
+  width: 400px;
+}
+
+
+.blue {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.grey {
+  background-color: #eeeeee;
+}
+
+.features {
+  height: 330px;
+}
+
+.features-img {
+  display: block;
+  margin: 0 auto;
+  outline: 1px solid deeppink;
+}
+
+.question {
+  position: relative;
+  -min-height: 291px;
+}
+
+.question-interesting {
+   -display: block;
+   font-size: 30px;
+   line-height: 24px;
+   font-weight: bold;
+   text-align: center;
+   text-transform: uppercase;
+   -margin-bottom: 26px;
+ }
+
+.question-offer {
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.btn-search {
+  height: 86px;
+  width: 568px;
+}
+
+.features-item {
+  float: left;
+  -display: inline-block;
+  -vertical-align: middle;
+  padding-top: 56px;
+  min-height: 330px;
+  width: 400px;
+  padding: 0;
+  -outline: 1px solid red;
+}
+
+.form-search {
+  -position: absolute;
+  min-height: 481px;
+  width: 568px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid black;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.form-search-header {
+  min-height: 86px;
+  background: #766357;
+  padding-top: 30px;
+}
+
+.form-search-header p {
+  font-size: 21px;
+  font-weight: bold;
+  color: white;
+  line-height: 26px;
+  text-align: center;
+  vertical-align: middle;
+  outline: 1px solid black;
+  padding: 0 0;
+  margin: 0 0;
+}
+
+.text-on-form-search {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: lowercase;
+}
+
+.form-search input {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width: 386px;
+  height: 38px;
+  margin-left: 187px;
+}
+
+.form-search label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn-search {
+  color: #ffffff;
+  background: #81b3d2;
+  width: 458px;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: bold;
+  text-transform: inherit;
+}
+
+.map {
+  min-height: 593px;
+}
+
+.footer {
+  display: inline-block;
+  min-height: 120px;
+}
+
+.main-footer {
+  -background: grey;
+  margin-top: 120px;
+}
+
+.footer-hashteg,
+.footer-social,
+.footer-copyright {
+  float: left;
+  -display: inline-block;
+  -padding: auto;
+  min-height: 120px;
+  width: 400px;
+  background: grey;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* index-hotels*/
+
+.left-right-padding-container {
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+.column-in-filter {
+  display: block;
+  float: left;
+  -vertical-align: top;
+  outline: 1px solid black;
+}
+
+.column-in-filter:last-child {
+  float: right;
+}
+
+.hotel-image,
+.hotel-description {
+  display: inline-block;
+  vertical-align: baseline;
+  outline: 2px dotted red;
+}
+
+.hotel-image,
+.hotel-description,
+.type,
+.price,
+.about,
+.reserve,
+.raiting {
+  vertical-align: top;
+  outline: 1px solid grey;
+}
+
+.content-hotel {
+  height: 151px;
+  width: 1056px;
+}
+
+.hotel-image {
+  width: 135px;
+  margin-right: 25px;
+}
+
+.hotel-description {
+  height: 90px;
+  width: 891px;
+}
+
+.description-header,
+.description-middle,
+.description-bottom {
+  outline: 3px solid aqua;
+}
+
+.description-header .title,
+.description-bottom btn {
+  display: block;
+  float: left;
+  outline: 1px dotted black;
+}
+
+.stars,
+.raiting {
+  display: block;
+  float: right;
+}
+
+.content-left,
+.content-right {
+  display: inline-block;
+  vertical-align: baseline;
+  outline: 2px dotted red;
+}
+
+.content-left {
+  width: 135px;
+}
+
+.content-right {
+  width: 892px;
+  margin-left: 45px;
+}
+
+.result-count,
+.sorting,
+.arrow {
+  display: block;
+  float: left;
+  outline: 2px dotted red;
+}
+
+.arrow {
+  float: right;
+}
+
+
