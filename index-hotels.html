@@ -8,18 +8,21 @@
 <body>
 <div class="container">
 <header class="main-header">
-    <nav class="main-nav">
-        <ul>
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-            <li><a href="#"><img src="img/logo.png" width="140px" alt=""></a></li>
-            <li><a href="#">Карта штата</a></li>
-            <li><a href="#">Гостиницы</a></li>
-        </ul>
-    </nav>
+  <nav class="main-nav">
+    <ul class="clearfix">
+      <li class="to-left"><a href="#">Информация</a></li>
+      <li class="to-left"><a href="#">Фото и видео</a></li>
+      <li class="to-right"><a href="#">Гостиницы</a></li>
+      <li class="to-right"><a href="#">Карта штата</a></li>
+    </ul>
+  </nav>
+  <div class="logo-header">
+    <img src="img/logo2.png" width="137" alt="">
+  </div>
 </header>
 <main>
-    <form class="content-filter left-right-padding-container clearfix" action="" method="get">
+    <div class="content-filter clearfix left-right-padding-container">
+    <form class="content-filter clearfix" action="" method="get">
       <div class="column-in-filter">
       <span class="title-in-filter">Инфраструктура</span>
         <ul class="infrastructure">
@@ -43,6 +46,7 @@
         <button class="button-show" type="submit">Показать</button>
       </div>
     </form>
+    </div>
     <div class="content left-right-padding-container clearfix">
       <div class="conten-left">
         <div class="result-count">
@@ -80,8 +84,8 @@
                 <span class="price">от 4000 р.</span>
             </div>
             <div class="description-bottom clearfix">
-                <a class="btn about" href="#">Подробнее</a>
-                <a class="btn reserve" href="#">Забронировать</a>
+                <a class="btn-about" href="#">Подробнее</a>
+                <a class="btn-reserve" href="#">Забронировать</a>
                 <span class="raiting">Рейтинг:8,5</span>
             </div>
         </div>
@@ -104,8 +108,8 @@
                 <span class="price">от 3000 р.</span>
             </div>
             <div class="description-bottom clearfix">
-                <a class="btn about" href="#">Подробнее</a>
-                <a class="btn reserve" href="#">Забронировать</a>
+                <a class="btn-about" href="#">Подробнее</a>
+                <a class="btn-reserve" href="#">Забронировать</a>
                 <span class="raiting">Рейтинг:8,9</span>
             </div>
         </div>
@@ -128,8 +132,8 @@
                 <span class="price">от 2000 р.</span>
             </div>
             <div class="description-bottom clearfix">
-                <a class="btn about" href="#">Подробнее</a>
-                <a class="btn reserve" href="#">Забронировать</a>
+                <a class="btn-about" href="#">Подробнее</a>
+                <a class="btn-reserve" href="#">Забронировать</a>
               <div class="raiting">
                 <span>Рейтинг:8,9</span>
               </div>

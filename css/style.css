@@ -18,8 +18,11 @@ main {
 }
 
 .main-header {
+  position: relative;
   min-height: 70px;
   width: 1200px;
+  padding: 0 72px;
+  margin: 0;
 }
 
 .main-nav {
@@ -27,27 +30,32 @@ main {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 26px;
-  -padding: 0 72px;
+  width: 1056px;
 }
 
 .main-nav ul {
-  margin: 0 72px;
   padding: 0;
-
+  margin: 0;
   list-style: none;
-  -font-size: 0;
 }
 
 .main-nav li {
   display: inline-block;
-  -margin-left: auto;
-  margin-right: 89px;
+  width: 240px;
   font-size: 14px;
   line-height: 26px;
-  vertical-align: middle;
   -padding-top: 15px;
-  text-align: center;
   outline: 1px solid black;
+}
+
+.to-left {
+  float: left;
+  text-align: left;
+}
+
+.to-right {
+  float: right;
+  text-align: right;
 }
 
 .main-nav li:first-child {
@@ -58,23 +66,15 @@ main {
   text-align: right;
 }
 
-.main-nav li:nth-child(3n) {
-  padding-top: 0;
-}
-
 .main-nav li:last-child {
   margin-right: 0;
   padding-right: 0;
 }
 
-.main-nav li {
-  text-align: center;
-}
-
 .main-nav a {
   display: block;
   vertical-align: middle;
-  width: 137px;
+  -width: 137px;
   height: 41px;
   padding-top: 15px;
   padding-left: 0;
@@ -83,8 +83,10 @@ main {
   text-decoration: none;
 }
 
-.main-nav a:nth-child(3n) {
-  padding-top: -15px;
+.logo-header {
+  position: absolute;
+  top: 0;
+  left: 531px; /*сделать потом по-нормальному*/
 }
 
 .main-image {
@@ -322,7 +324,7 @@ main {
 
 .main-footer {
   -background: grey;
-  margin-top: 120px;
+  -margin-top: 120px;
 }
 
 .footer-hashteg,
@@ -347,18 +349,90 @@ main {
 /* index-hotels*/
 
 .left-right-padding-container {
-  padding-left: 72px;
-  padding-right: 72px;
+  padding: 0 72px;
+}
+
+.content-filter {
+  margin-top: -14px;
+  height: 217px;
+  width: 1056px;
+  background: #7397ba url("../img/filter-background-.jpg") no-repeat;
+}
+
+.title-in-filter {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
 }
 
 .column-in-filter {
   display: block;
   float: left;
-  -vertical-align: top;
+  height: 217px;
+  width: 255px;
+  padding-top: 30px;
+  box-sizing: border-box;
+  outline: 1px solid black;
+}
+
+.column-in-filter ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.column-in-filter li {
+  -display: inline-block;
+  margin-left: 0;
+  font-size: 14px;
+  line-height: 26px;
+  vertical-align: middle;
+  text-align: left;
   outline: 1px solid black;
 }
 
 .column-in-filter:last-child {
+  float: right;
+  width: 328px;
+}
+
+.content {
+  height: 86px;
+}
+
+.content-left,
+.content-right {
+  display: inline-block;
+  vertical-align: baseline;
+  outline: 2px solid red;
+}
+
+.content-left {
+  float: left;
+  width: 135px;
+}
+
+.content-right {
+  float: right;
+  width: 892px;
+}
+
+.conten-left {
+  padding-top: 30px;
+}
+
+.result-count,
+.sorting,
+.arrow {
+  display: block;
+  float: left;
+  outline: 2px dotted red;
+}
+
+.arrow {
   float: right;
 }
 
@@ -373,16 +447,18 @@ main {
 .hotel-description,
 .type,
 .price,
-.about,
-.reserve,
+.btn-about,
+.btn-reserve,
 .raiting {
   vertical-align: top;
   outline: 1px solid grey;
 }
 
 .content-hotel {
-  height: 151px;
+  height: 120px;
   width: 1056px;
+  padding-top: 30px;
+  outline: 1px solid black;
 }
 
 .hotel-image {
@@ -408,37 +484,17 @@ main {
   outline: 1px dotted black;
 }
 
+.description-header {
+  margin-bottom: 10px;
+}
+
+.description-middle {
+  margin-bottom: 16px;
+}
+
 .stars,
 .raiting {
   display: block;
-  float: right;
-}
-
-.content-left,
-.content-right {
-  display: inline-block;
-  vertical-align: baseline;
-  outline: 2px dotted red;
-}
-
-.content-left {
-  width: 135px;
-}
-
-.content-right {
-  width: 892px;
-  margin-left: 45px;
-}
-
-.result-count,
-.sorting,
-.arrow {
-  display: block;
-  float: left;
-  outline: 2px dotted red;
-}
-
-.arrow {
   float: right;
 }
 
