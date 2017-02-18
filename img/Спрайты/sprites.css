@@ -1,0 +1,112 @@
+.sprites, .arrow-down-black, .arrow-down-blue, .arrow-down-grey, .arrow-up-black, .arrow-up-blue, .arrow-up-grey, .minus-black, .minus-blue, .plus-black, .plus-blue, .calendar-black, .calendar-blue, .twitter-grey, .player-grey, .facebook-grey, .checkbox-checked-blocked, .checkbox-blocked{
+	background: url(sprites.png) no-repeat;
+}
+
+.sprites{
+	background-position: 0 0;
+	width: 129px;
+	height: 129px;
+}
+
+.arrow-down-black{
+	background-position: -150px 0;
+	width: 11px;
+	height: 10px;
+}
+
+.arrow-down-blue{
+	background-position: -200px 0;
+	width: 11px;
+	height: 10px;
+}
+
+.arrow-down-grey{
+	background-position: -250px 0;
+	width: 11px;
+	height: 10px;
+}
+
+.arrow-up-black{
+	background-position: -150px -50px ;
+	width: 11px;
+	height: 10px;
+}
+
+.arrow-up-blue{
+	background-position: -200px -50px ;
+	width: 11px;
+	height: 10px;
+}
+
+.arrow-up-grey{
+	background-position: -250px -50px ;
+	width: 11px;
+	height: 10px;
+}
+
+.minus-black{
+	background-position: 0 -150px ;
+	width: 12px;
+	height: 3px;
+}
+
+.minus-blue{
+	background-position: 0 -200px ;
+	width: 12px;
+	height: 3px;
+}
+
+.plus-black{
+	background-position: -50px -150px ;
+	width: 11px;
+	height: 11px;
+}
+
+.plus-blue{
+	background-position: -50px -200px ;
+	width: 11px;
+	height: 11px;
+}
+
+.calendar-black{
+	background-position: -100px -150px ;
+	width: 21px;
+	height: 22px;
+}
+
+.calendar-blue{
+	background-position: -100px -200px ;
+	width: 21px;
+	height: 22px;
+}
+
+.twitter-grey{
+	background-position: -150px -150px ;
+	width: 17px;
+	height: 15px;
+}
+
+.player-grey{
+	background-position: -150px -100px ;
+	width: 20px;
+	height: 16px;
+}
+
+.facebook-grey{
+	background-position: -150px -200px ;
+	width: 10px;
+	height: 19px;
+}
+
+.checkbox-checked-blocked{
+	background-position: -200px -100px ;
+	width: 26px;
+	height: 22px;
+}
+
+.checkbox-blocked{
+	background-position: -200px -150px ;
+	width: 22px;
+	height: 22px;
+}
+
