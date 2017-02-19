@@ -78,12 +78,9 @@ main {
   text-align: left;
 }
 
-
-
 .main-nav li:nth-child(3),
 .main-nav li:nth-child(4) {
   display: inline-block;
-  -float: right;
   margin-right: 0;
   vertical-align: top;
   text-align: right;
@@ -92,8 +89,6 @@ main {
 .main-nav a {
   display: inline-block;
   text-align: center;
-  padding-left: 0;
-
   color: #000000;
   text-decoration: none;
 }
@@ -116,7 +111,6 @@ main {
 
 .main-image {
   height: 432px;
-  -width: 1200px;
   margin-top: -14px;
   padding-top: 76px;
   padding-left: 371px;
@@ -150,7 +144,6 @@ main {
   text-transform: uppercase;
   margin-top: 60px;
   margin-bottom: 27px;
-  letter-spacing: 0.2px;
 }
 
 .tagline p:last-child {
@@ -186,7 +179,7 @@ main {
   width: 800px;
 }
 
-.content-text{
+.content-text {
   padding-top: 54px;
 }
 
@@ -256,7 +249,6 @@ main {
 .question {
   position: relative;
   padding-top: 53px;
-  -height: 291px;
   height: 238px;
 }
 
@@ -270,13 +262,12 @@ main {
 }
 
 .question-interesting {
-   font-size: 30px;
-   line-height: 30px;
-   font-weight: bold;
-   text-align: center;
-   text-transform: uppercase;
-   -margin-bottom: 26px;
- }
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 .question-offer {
   text-align: center;
@@ -286,17 +277,6 @@ main {
   text-transform: uppercase;
   margin-bottom: 50px;
 }
-
-/*.-btn-form-grey {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  left: 316px;
-  bottom: 0;
-  width: 568px;
-  margin-top: 50px;
-  outline: 2px solid crimson;
-}*/
 
 .btn-search-hotels,
 .btn-search {
@@ -325,7 +305,6 @@ main {
   top: 290px;
   height: 395px;
   width: 568px;
-  -padding-top: 55px;
   padding: 55px;
   box-sizing: border-box;
   background-color: #ffffff;
@@ -434,13 +413,6 @@ main {
   float: left;
 }
 
-/*.btn-minus {*/
-  /*position: absolute;*/
-  /*display: block;*/
-  /*width: 38px;*/
-  /*height: 38px;*/
-/*}*/
-
 .row-children {
   float: right;
   text-align: right;
@@ -453,10 +425,12 @@ main {
   padding: 0 38px;
   text-align: center;
 }
+
 /*--------------------- декоративные плюсы и минусы -----------------*/
 .row-count-input {
   -position: relative;
 }
+
 .icon-minus {
   position: relative;
   font-size: 0;
@@ -473,11 +447,6 @@ main {
   top: -5px;
   left: 60px;
   transform: translate(-50%, -50%);
-  /*top: 8px;
-  left: 54px;
-
-  width: 12px;
-  height: 3px;*/
   width: 38px;
   height: 38px;
   background: url("../img/sprites.png") no-repeat -38px 17px;
@@ -531,6 +500,7 @@ main {
 .icon-plus:active::before {
   background: url("../img/sprites.png") no-repeat -36px -186px;
 }
+
 /*--------------------- декоративные плюсы и минусы -----------------*/
 .row-children input {
   margin-left: 27px;
@@ -661,7 +631,6 @@ main {
   background-position: -150px -200px;
 }
 
-
 .social-btn-yb:active::before {
   width: 20px;
   height: 16px;
@@ -674,7 +643,6 @@ main {
   font-size: 0;
   float: right;
   margin-top: 5px;
-  -padding-top: 9px;
 }
 
 .footer-copyright span {
@@ -744,7 +712,6 @@ main {
   color: #ffffff;
   padding: 0;
   margin: 0;
-  -margin-bottom: 21px;
 }
 
 .column-in-filter ul {
@@ -791,7 +758,7 @@ input[type="checkbox"]:not(:checked) + label::before {
   position: absolute;
   top: -2px;
   left: 0;
-  background: url("../img/sprites.png")  no-repeat -50px -50px;
+  background: url("../img/sprites.png") no-repeat -50px -50px;
   width: 26px;
   height: 22px;
 }
@@ -807,16 +774,16 @@ input[type="checkbox"]:checked:not(:disabled) + label::after {
 }
 
 input[type="checkbox"]:disabled + label::before {
-   content: "";
-   display: block;
-   position: absolute;
-   top: -2px;
-   left: 0;
-   background: url("../img/sprites.png")  no-repeat -200px -150px;
-   width: 26px;
-   height: 22px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  background: url("../img/sprites.png") no-repeat -200px -150px;
+  width: 26px;
+  height: 22px;
   cursor: not-allowed;
- }
+}
 
 input[type="checkbox"]:disabled + label {
   color: grey;
@@ -829,7 +796,7 @@ input[type="checkbox"]:checked:disabled + label::before {
   position: absolute;
   top: -2px;
   left: 0;
-  background: url("../img/sprites.png")  no-repeat -200px -100px;
+  background: url("../img/sprites.png") no-repeat -200px -100px;
   width: 26px;
   height: 22px;
   cursor: not-allowed;
@@ -839,15 +806,12 @@ input[type="checkbox"]:checked:disabled + label {
   color: grey;
   cursor: not-allowed;
 }
-/*-------------------------------------*/
 
+/*-------------------------------------*/
 
 /*----------------- верстаем сложный фильтр --------------------------*/
 .column-in-filter:last-child {
   width: 318px;
-  -padding-left: 10px;
-  -margin: 50px auto; /* для демо */
-
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -1147,8 +1111,6 @@ input[type="checkbox"]:checked:disabled + label {
 
 .description-header .title {
   display: block;
-  -height: 21px;
-  -padding: 0;
   margin-top: -3px;
   vertical-align: top;
   font-size: 21px;
@@ -1262,7 +1224,6 @@ input[type="checkbox"]:checked:disabled + label {
 
 .stars {
   position: relative;
-  -background: red url("../img/sprites.png") no-repeat 0 -350px;
 }
 
 .stars-count-4 {
