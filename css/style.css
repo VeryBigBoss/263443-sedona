@@ -44,16 +44,14 @@ main {
   font-size: 0;
   margin: 0;
   list-style: none;
-  outline: 1px solid red;
 }
 
 .main-nav li {
   display: inline-block;
-  width: 20%;
+  width: 240px;
   font-size: 14px;
   line-height: 26px;
   padding-top: 14px;
-  outline: 1px solid black;
 }
 
 .to-left {
@@ -73,25 +71,21 @@ main {
   vertical-align: middle;
   text-align: center;
 }*/
-
+.main-nav li:nth-child(1),
 .main-nav li:nth-child(2) {
-  text-align: center;
+  float: left;
+  text-align: left;
 }
 
-.main-nav li:nth-child(3) {
- margin-left: 211px;
-}
+
 
 .main-nav li:nth-child(3),
 .main-nav li:nth-child(4) {
   display: inline-block;
+  float: right;
   margin-right: 0;
   vertical-align: top;
   text-align: right;
-}
-
-.main-nav li:nth-child(3) {
-  text-align: center;
 }
 
 .main-nav a {
@@ -321,6 +315,7 @@ main {
   position: absolute;
   left: 316px;
   bottom: 0;
+  cursor: pointer;
 }
 
 .form-search {
@@ -369,14 +364,15 @@ main {
   text-align: left;
 }
 
-.form-search input:focus {
+.form-search input:not([type="submit"]):hover {
+  background-color: #ebebeb;
+}
+
+.form-search input:not([type="submit"]):focus {
   outline: 2px solid #ebebeb;
   background-color: #ffffff;
 }
 
-.form-search input:not([type="submit"]):hover {
-  background-color: #ebebeb;
-}
 .form-search .adult,
 .form-search .children {
   width: 38px;
