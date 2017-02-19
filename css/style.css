@@ -36,6 +36,7 @@ main {
   font-size: 0;
   text-transform: uppercase;
   line-height: 26px;
+  text-align: right;
   -width: 1056px;
 }
 
@@ -82,7 +83,7 @@ main {
 .main-nav li:nth-child(3),
 .main-nav li:nth-child(4) {
   display: inline-block;
-  float: right;
+  -float: right;
   margin-right: 0;
   vertical-align: top;
   text-align: right;
