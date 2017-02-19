@@ -842,11 +842,6 @@ input[type="checkbox"]:checked:disabled + label {
   color: grey;
   cursor: not-allowed;
 }
-
-.form-search input:not([type="submit"]):hover {
-  background-color: #ebebeb;
-}
-
 /*-------------------------------------*/
 
 
