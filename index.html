@@ -14,8 +14,8 @@
       <ul class="clearfix">
         <li class="to-left"><a href="#">Информация</a></li>
         <li class="to-left"><a href="#">Фото и видео</a></li>
-        <li class="to-right"><a href="index-hotels.html">Гостиницы</a></li>
-        <li class="to-right"><a href="#">Карта штата</a></li>
+        <li><a href="#">Карта штата</a></li>
+        <li><a href="index-hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
     <div class="logo-header">
@@ -98,35 +98,37 @@
       <button class="btn-search-hotels">Поиск гостиницы в седоне</button>
       <!--</div>-->
       <div class="form-search">
-        <form action="" method="get">
+        <form action="#" method="get">
           <div class="row">
-            <label class="text-on-form-search">Дата заезда:</label>
-            <input class="arrival" id="arrival-date" name="arrival-date" type="textbox" value="24 апреля 2017">
+            <label for="arrival-date" class="text-on-form-search">Дата заезда:</label>
+            <input class="arrival" id="arrival-date" name="arrival-date" type="textbox" placeholder="24 апреля 2017">
             <span class="calendar"></span>
           </div>
           <div class="row">
-            <label class="text-on-form-search">Дата выезда:</label>
-            <input class="departure" id="departure-date" name="departure-date" type="textbox" value="4 июля 2017">
+            <label for="departure-date" class="text-on-form-search">Дата выезда:</label>
+            <input class="departure" id="departure-date" name="departure-date" type="textbox" placeholder="4 июля 2017">
             <span class="calendar"></span>
           </div>
           <!--<div class="clearfix">-->
           <div class="row-adult">
-            <span class="icon-minus"></span>
-            <span class="icon-plus"></span>
-            <label class="text-on-form-search">Взрослые:</label>
-            <input class="adult" id="adult-count" name="adult-count" type="textbox" value="2">
+            <!--<button class="btn-minus"></button>-->
+            <!--<div class="row-count-input">-->
+              <span class="icon-minus"></span>
+              <span class="icon-plus"></span>
+              <label for="adult-count" class="text-on-form-search">Взрослые:</label>
+              <input class="adult" id="adult-count" name="adult-count" type="textbox" value="2">
+            <!--</div>-->
           </div>
           <div class="row-children">
             <span class="icon-minus"></span>
             <span class="icon-plus"></span>
-            <label class="text-on-form-search">Дети:</label>
+            <label for="children-count" class="text-on-form-search">Дети:</label>
             <input class="children" type="textbox" id="children-count" name="children-count" value="0">
           </div>
           <!--</div>-->
           <button class="btn-search" type="submit">Найти</button>
         </form>
       </div>
-
     </div>
     <div class="map">
       <img src="img/map.png" width="1200" height="593" alt="Карта">

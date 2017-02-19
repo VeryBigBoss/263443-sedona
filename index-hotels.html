@@ -14,8 +14,8 @@
       <ul class="clearfix">
         <li class="to-left"><a href="#">Информация</a></li>
         <li class="to-left"><a href="#">Фото и видео</a></li>
-        <li class="to-right"><a class="active-page" href="#">Гостиницы</a></li>
-        <li class="to-right"><a href="#">Карта штата</a></li>
+        <li><a href="#">Карта штата</a></li>
+        <li><a class="active-page" href="#">Гостиницы</a></li>
       </ul>
     </nav>
     <div class="logo-header">
@@ -24,7 +24,7 @@
   </header>
   <main>
     <div class="content-filter clearfix left-right-padding-container">
-      <form class="content-filter clearfix" action="" method="get">
+      <form class="-content-filter clearfix" action="" method="get">
         <div class="column-in-filter">
           <span class="title-in-filter">Инфраструктура:</span>
           <ul class="infrastructure">
@@ -35,7 +35,8 @@
               <input type="checkbox" id="parking" name="parking">
               <label for="parking">Парковка</label>
             </li>
-            <li><input type="checkbox" id="wi-fi" name="wi-fi" disabled>
+            <li>
+                <input type="checkbox" id="wi-fi" name="wi-fi" disabled>
                 <label for="wi-fi">Wi-fi</label>
             </li>
           </ul>
@@ -87,8 +88,8 @@
         <div class="sorting">
           <span class="text-in-sorting">Сортировка:</span>
           <a class="text-in-sorting active" href="#">по цене</a>
-          <a class="text-in-sorting none-active" href="#">по типу</a>
-          <a class="text-in-sorting none-active" href="#">по рейтингу</a>
+          <a class="text-in-sorting" href="#">по типу</a>
+          <a class="text-in-sorting" href="#">по рейтингу</a>
         </div>
         <div class="arrow">
           <a class="arrow-up"></a>
@@ -108,7 +109,8 @@
             <a href="#">Amara resort & spa</a>
           </div>
           <div class="stars to-right">
-            <img src="img/stars.png" alt="4 звезды">
+            <span class="stars-count-4"></span>
+            <!--<img src="img/stars.png" alt="4 звезды">-->
           </div>
         </div>
         <div class="description-middle clearfix">
@@ -133,7 +135,8 @@
             <a href="#">Desert quail inn</a>
           </div>
           <div class="stars">
-            <img class="stars" src="img/stars.png" alt="3 звезды">
+            <span class="stars-count-3"></span>
+            <!--<img class="stars" src="img/stars.png" alt="3 звезды">-->
           </div>
         </div>
         <div class="description-middle">
@@ -158,7 +161,8 @@
             <a href="#">Villas at poco diablo</a>
           </div>
           <div class="stars">
-            <img src="img/stars.png" alt="2 звезды">
+            <!--<img src="img/stars.png" alt="2 звезды">-->
+            <span class="stars-count-2"></span>
           </div>
         </div>
         <div class="description-middle">
