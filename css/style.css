@@ -7,7 +7,6 @@ body {
   margin: 0;
   color: #000000;
   text-transform: uppercase;
-  /*background: url("");*/
 }
 
 .container,
@@ -37,7 +36,6 @@ main {
   text-transform: uppercase;
   line-height: 26px;
   text-align: right;
-  -width: 1056px;
 }
 
 .main-nav ul {
@@ -64,14 +62,6 @@ main {
   float: right;
 }
 
-/*.main-nav li:last-child {
-  margin-right: 0;
-  padding-right: 0;
-  font-size: 14px;
-  line-height: 26px;
-  vertical-align: middle;
-  text-align: center;
-}*/
 .main-nav li:nth-child(1),
 .main-nav li:nth-child(2) {
   float: left;
@@ -380,7 +370,6 @@ main {
 .form-search arrival {
   position: relative;
   padding-left: 12px;
-  -padding-right: 39px;
   text-align: center;
 }
 
@@ -443,7 +432,6 @@ main {
   content: "";
   position: absolute;
   display: block;
-  -margin-right: 5px;
   top: -5px;
   left: 60px;
   transform: translate(-50%, -50%);
@@ -481,7 +469,6 @@ main {
   content: "";
   position: absolute;
   left: 116px;
-
   width: 38px;
   height: 38px;
   background: url("../img/sprites.png") no-repeat -86px 14px;
@@ -819,7 +806,6 @@ input[type="checkbox"]:checked:disabled + label {
 .filter-range-title {
   margin-bottom: 10px;
   margin-left: -10px;
-
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -827,12 +813,9 @@ input[type="checkbox"]:checked:disabled + label {
 
 .price-controls {
   position: relative;
-
   height: 32px;
   margin-bottom: 20px;
-
   font-size: 0;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -842,10 +825,8 @@ input[type="checkbox"]:checked:disabled + label {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 2px;
   height: 22px;
-
   background: #ffffff;
   transform: translate(-50%, -50%);
 }
@@ -857,7 +838,6 @@ input[type="checkbox"]:checked:disabled + label {
   font-size: 14px;
   line-height: 21px;
   vertical-align: top;
-
   cursor: pointer;
 }
 
@@ -874,17 +854,14 @@ input[type="checkbox"]:checked:disabled + label {
 .price-controls input {
   width: 50px;
   margin: 0;
-
   color: inherit;
   font: inherit;
-
   background: none;
   border: none;
 }
 
 .range-controls {
   position: relative;
-
   margin-bottom: 32px;
 }
 
@@ -897,17 +874,14 @@ input[type="checkbox"]:checked:disabled + label {
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 
 .range-toggle {
   position: absolute;
   top: -9px;
-
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
