@@ -126,7 +126,6 @@ main {
   padding-top: 76px;
   padding-left: 371px;
   margin-bottom: 0;
-  outline: 1px dotted black;
   background: /*#4076a1*/ url("../img/main-image-background2.jpg") no-repeat;
 }
 
@@ -141,7 +140,6 @@ main {
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
-  outline: 1px dashed black;
 }
 
 .tagline p {
@@ -167,16 +165,11 @@ main {
   text-transform: uppercase;
 }
 
-.content-text{
-  outline: 1px solid green;
-}
-
 .title {
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
   text-align: center;
-  outline: 1px solid black;
   text-transform: uppercase;
 }
 
@@ -186,13 +179,10 @@ main {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  outline: 1px solid brown;
 }
 
 .content-item {
-  -float: left;
   height: 256px;
-  outline: 1px dashed yellow;
 }
 
 .content-image {
@@ -208,7 +198,6 @@ main {
 .grey .content-text {
   padding-top: 47px;
 }
-
 
 .content-text p {
   padding: 0;
@@ -227,10 +216,9 @@ main {
 
 .content-text {
   float: left;
-  height: 200px;
+  height: 202px;
   width: 400px;
 }
-
 
 .blue {
   color: #ffffff;
@@ -250,13 +238,11 @@ main {
   min-height: 330px;
   width: 400px;
   padding: 0;
-  -outline: 1px solid red;
 }
 
 .features-img {
   position: relative;
   height: 131px;
-  outline: 1px solid deeppink;
   text-align: center;
   vertical-align: bottom;
   margin-bottom: 30px;
@@ -266,7 +252,6 @@ main {
 .features-img img {
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid black;
 }
 
 .features-item .title {
@@ -276,9 +261,8 @@ main {
 .question {
   position: relative;
   padding-top: 53px;
-  /*height: 291px;*/
+  -height: 291px;
   height: 238px;
-  -outline: 2px solid chocolate;
 }
 
 .question p {
@@ -349,7 +333,7 @@ main {
   padding: 55px;
   box-sizing: border-box;
   background-color: #ffffff;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);;
+  box-shadow: 0 4px 12px 2px rgba(0, 1, 1, 0.2);
   z-index: 10;
 }
 
@@ -376,20 +360,13 @@ main {
   background: #f2f2f2;
   text-transform: uppercase;
   border: none;
-  -outline: 1px solid blueviolet;
 }
 
 .form-search input:nth-child(1),
 .form-search input:nth-child(2) {
   padding-left: 12px;
   padding-right: 39px;
-  -background: #f2f2f2 url("../img/calendar.png") no-repeat 314px 50%;
   text-align: left;
-}
-
-.form-search input:hover:nth-child(1),
-.form-search input:hover:nth-child(2) {
-  background-color: #ebebeb;
 }
 
 .form-search input:focus {
@@ -400,12 +377,6 @@ main {
 .form-search input:not([type="submit"]):hover {
   background-color: #ebebeb;
 }
-
-.form-search input:not([type="submit"]):focus {
-  background-color: #ffffff;
-  outline: 2px solid #e5e5e5;
-}
-
 .form-search .adult,
 .form-search .children {
   width: 38px;
@@ -614,7 +585,6 @@ main {
   width: 400px;
   text-align: center;
   vertical-align: middle;
-  -outline: 1px solid black;
 }
 
 .footer-hashteg {
@@ -767,7 +737,6 @@ main {
   width: 255px;
   padding-top: 27px;
   box-sizing: border-box;
-  -outline: 1px solid black;
 }
 
 .title-in-filter {
@@ -794,7 +763,6 @@ main {
   color: #ffffff;
   text-align: left;
   margin-bottom: 20px;
-  -outline: 1px solid black;
 }
 
 .column-in-filter:last-child {
@@ -814,6 +782,10 @@ input[type="checkbox"] + label {
   padding-left: 40px;
   position: relative;
   cursor: pointer;
+}
+
+.type-house input[type="checkbox"] + label {
+  padding-left: 41px;
 }
 
 input[type="checkbox"]:not(:checked) + label::before {
@@ -1002,13 +974,13 @@ input[type="checkbox"]:checked:disabled + label {
 .btn-transparent {
   display: block;
   margin: 0 auto;
-
+  margin-left: 85px;
   height: 36px;
   width: 137px;
   padding: 6px 35px;
 
   font-size: 14px;
-  line-height: 20px;
+  line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -1036,7 +1008,6 @@ input[type="checkbox"]:checked:disabled + label {
   display: inline-block;
   font-size: 0;
   vertical-align: baseline;
-  -outline: 2px solid red;
 }
 
 .content-left {
@@ -1059,7 +1030,6 @@ input[type="checkbox"]:checked:disabled + label {
 .arrow {
   display: block;
   float: left;
-  -outline: 2px dotted red;
 }
 
 .sorting {
@@ -1140,8 +1110,6 @@ input[type="checkbox"]:checked:disabled + label {
 .hotel-image,
 .hotel-description {
   display: block;
-  -vertical-align: baseline;
-  -outline: 2px dotted red;
 }
 
 .hotel-image,
@@ -1153,14 +1121,12 @@ input[type="checkbox"]:checked:disabled + label {
 .raiting {
   box-sizing: border-box;
   vertical-align: top;
-  -outline: 1px solid grey;
 }
 
 .content-hotel {
   height: 120px;
   width: 1056px;
   padding-top: 30px;
-  -outline: 1px solid black;
   border-bottom: 1px solid #f2f2f2;
 }
 
@@ -1175,12 +1141,6 @@ input[type="checkbox"]:checked:disabled + label {
   width: 891px;
 }
 
-.description-header,
-.description-middle,
-.description-bottom {
-  -outline: 1px solid aqua;
-}
-
 .description-header .title {
   display: block;
   float: left;
@@ -1188,7 +1148,7 @@ input[type="checkbox"]:checked:disabled + label {
 
 .description-header {
   padding-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   height: 26px;
   font-size: 0;
 }
@@ -1221,7 +1181,7 @@ input[type="checkbox"]:checked:disabled + label {
 }
 
 .description-middle {
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 }
 
 .description-middle .type {
