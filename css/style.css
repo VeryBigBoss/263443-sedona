@@ -47,6 +47,7 @@ main {
 
 .main-nav li {
   display: inline-block;
+  vertical-align: top;
   width: 240px;
   font-size: 14px;
   line-height: 26px;
@@ -71,6 +72,7 @@ main {
 .main-nav li:nth-child(3),
 .main-nav li:nth-child(4) {
   display: inline-block;
+  vertical-align: top;
   margin-right: 0;
   vertical-align: top;
   text-align: right;
@@ -78,6 +80,7 @@ main {
 
 .main-nav a {
   display: inline-block;
+  vertical-align: top;
   text-align: center;
   color: #000000;
   text-decoration: none;
@@ -105,7 +108,7 @@ main {
   padding-top: 76px;
   padding-left: 371px;
   margin-bottom: 0;
-  background: /*#4076a1*/ url("../img/main-image-background2.jpg") no-repeat;
+  background: #467ea9 url("../img/main-image-background3.jpg") no-repeat;
 }
 
 .main-image img {
@@ -127,11 +130,14 @@ main {
 }
 
 .tagline p:first-child {
+  width: 440px;
   font-weight: bold;
   font-size: 21px;
   text-align: center;
   line-height: 26px;
   text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 60px;
   margin-bottom: 27px;
 }
@@ -160,13 +166,14 @@ main {
 }
 
 .content-item {
-  height: 256px;
+  min-height: 256px;
 }
 
 .content-image {
   float: left;
   height: 256px;
   width: 800px;
+  background-color: #81b3d2;
 }
 
 .content-text {
@@ -187,14 +194,26 @@ main {
   margin-bottom: 24px;
 }
 
-.blue p:nth-child(2),
-.grey p:nth-child(2) {
+.blue .title {
+  width: 151px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blue .about {
+  width: 305px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blue .number,
+.grey .number {
   margin-bottom: 21px;
 }
 
 .content-text {
   float: left;
-  height: 202px;
+  min-height: 202px;
   width: 400px;
 }
 
@@ -205,6 +224,18 @@ main {
 
 .grey {
   background-color: #eeeeee;
+}
+
+.grey .title {
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+
+.grey .about {
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
 }
 
 .features {
@@ -234,6 +265,12 @@ main {
 
 .features-item .title {
   margin-bottom: 24px;
+}
+
+.features-item .about {
+  width: 285px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .question {
@@ -316,6 +353,7 @@ main {
 
 .form-search input {
   display: inline-block;
+  vertical-align: baseline;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 14px;
@@ -425,7 +463,6 @@ main {
   font-size: 0;
   width: 38px;
   height: 38px;
-  background-color: red;
 }
 
 .icon-minus::before {
@@ -520,6 +557,7 @@ main {
 .map {
   position: relative;
   height: 593px;
+  background-color: #cbdda9;
 }
 
 .main-footer {
@@ -693,6 +731,7 @@ main {
 
 .title-in-filter {
   display: inline-block;
+  vertical-align: top;
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
@@ -833,7 +872,6 @@ input[type="checkbox"]:checked:disabled + label {
 
 .price-controls label {
   display: inline-block;
-
   padding-top: 5px;
   font-size: 14px;
   line-height: 21px;
@@ -867,7 +905,6 @@ input[type="checkbox"]:checked:disabled + label {
 
 .range-controls .scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
@@ -922,7 +959,6 @@ input[type="checkbox"]:checked:disabled + label {
 
 .btn-transparent:hover {
   color: #000000;
-
   background: #ffffff;
 }
 
@@ -1003,6 +1039,7 @@ input[type="checkbox"]:checked:disabled + label {
 
 .arrow-up {
   display: inline-block;
+  vertical-align: baseline;
   margin-top: 8px;
   width: 11px;
   height: 10px;
@@ -1012,6 +1049,7 @@ input[type="checkbox"]:checked:disabled + label {
 
 .arrow-down {
   display: inline-block;
+  vertical-align: baseline;
   margin-left: 12px;
   width: 11px;
   height: 10px;
@@ -1114,11 +1152,13 @@ input[type="checkbox"]:checked:disabled + label {
 
 .description-middle .type {
   display: inline-block;
+  vertical-align: top;
   width: 110px;
 }
 
 .description-middle .price {
   display: inline-block;
+  vertical-align: top;
   width: 142px;
   margin-left: 2px;
 }
@@ -1131,6 +1171,7 @@ input[type="checkbox"]:checked:disabled + label {
 /*------------------- эффекты для кнопок ПОДРОБНЕЕ и ЗАБРОНИРОВАТЬ---------------------*/
 .description-bottom .btn-about {
   display: inline-block;
+  vertical-align: top;
   height: 27px;
   width: 110px;
   text-decoration: none;
@@ -1145,6 +1186,7 @@ input[type="checkbox"]:checked:disabled + label {
 
 .description-bottom .btn-reserve {
   display: inline-block;
+  vertical-align: top;
   height: 27px;
   width: 142px;
   text-decoration: none;
